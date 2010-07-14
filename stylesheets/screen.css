@@ -1,0 +1,43 @@
+body {
+  background:#211f20;
+  color:#ddd;
+}
+h1, h2, h3 {
+  color:#ddd;
+}
+#content {
+  margin-top:20px;
+}
+#logo {
+  margin-bottom:40px;
+}
+#newsletter {
+  margin-bottom:40px;
+}
+input#entry_2 {
+  width:315px;
+  font-size:2.5em;
+  padding:0.2em;
+}
+input#entry_2.error {
+  padding:0.2em;
+}
+#after-submit {
+  display:none;
+}
+label {
+  font-weight:normal;
+}
+label.error {
+  display:none !important;
+}
+.hint {
+  color:#ccc;
+}
+.legal {
+  margin-bottom:20px;
+}
+.legal p {
+  font-size:0.75em;
+  color:#333;
+}
