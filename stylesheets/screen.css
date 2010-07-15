@@ -5,6 +5,9 @@ body {
 h1, h2, h3 {
   color:#ddd;
 }
+h1 {
+  font-size:2.5em;
+}
 #content {
   margin-top:20px;
 }
@@ -31,6 +34,9 @@ label {
 label.error {
   display:none !important;
 }
+.fadein {
+  display:none;
+}
 .hint {
   color:#ccc;
 }
@@ -39,5 +45,5 @@ label.error {
 }
 .legal p {
   font-size:0.75em;
-  color:#333;
+  color:#666;
 }
