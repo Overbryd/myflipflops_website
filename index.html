@@ -2,89 +2,15 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf8" />
-    <title>myflipflops - Design your own Flip Flops</title>
+    <title>Blank space</title>
     <link rel="stylesheet" type="text/css" href="stylesheets/blueprint.css" />
     <link rel="stylesheet" type="text/css" href="stylesheets/screen.css" />
   </head>
   <body>
     <div class="container">
-      <div id="content" class="prepend-4 span-16 last">
-        <img id="logo" src="images/logo.gif" alt="Design your own Flip Flop" />
-        <h1 class="fadein">Design your own FlipFlops – coming soon!</h1>
-      </div>
-      <div id="newsletter" class="prepend-4 span-16 fadein">
-        <form id="newsletter-entry" action="https://spreadsheets.google.com/formResponse?formkey=dDZJMUg1dGgyUkE5cEQ1cmxPQ3RsVnc6MQ&amp;ifq" method="POST"> 
-          <label for="entry_2">Stay tuned by signing up for our newsletter! <sup>* No worries, we hate spam as much as you do.</sup></label>
-          <input type="text" name="entry.2.single" value="" id="entry_2" />
-          <input type="submit" name="submit" value="Eintragen" /><br/>
-          <input type="hidden" name="pageNumber" value="0" />
-          <input type="hidden" name="backupCache" value="" />
-        </form>
-        <p id="after-submit" class="large">Du bist erfolgreich mit der E-Mail <span class="email"></span> eingetragen.</p>
-      </div>
-      <div class="legal prepend-4 span-8 fadein">
-        <p>
-          myflipflops shoe GmbH<br/>
-          Prinzessinnenstr. 19-20<br/>
-          10969 Berlin<br/>
-          HRB 128190 B<br/>
-          myflipflops ist eine eingetragene Marke der myflipflops shoe GmbH beim Deutschen Patent- und Markenamt<br/>
-          <br/>
-          Email: me [at] myflipflops.de<br/>
-          Internet: www.myflipflops.de<br/>
-          <br/>
-          Tel.: +49 (0) 157 – 71458099<br/>
-          Fax.: +49 (0) 30 – 484 98 7434<br/>
-          <br/>
-          Geschäftsführer: Mathias Eylers<br/>
-          Eingetragen beim Amtsgericht Charlottenburg<br/>
-        </p>
-      </div>
-      <div class="legal span-8 last fadein">
-        <!-- does not exist yet
-          <img id="facebook" src="images/facebook.gif" />
-        -->
-        <p>
-          Haftungshinweis: Trotz sorgfältiger inhaltlicher Kontrolle übernehmen wir keine Haftung für die Inhalte externer Links. Für den Inhalt der verlinkten Seiten sind ausschließlich deren Betreiber verantwortlich.
-        </p>
-      </div>
+      <h1>This space</h1>
+      <h2>is intentionally left blank.</h2>
     </div>
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js"></script>
-    <script type="text/javascript" src="http://ajax.microsoft.com/ajax/jquery.validate/1.7/jquery.validate.min.js"></script>
-    <script type="text/javascript" src="http://github.com/malsup/form/raw/master/jquery.form.js?v2.43"></script>
-    <script type="text/javascript">
-      $(function(){
-        function fadeIn(elements, time){
-          time = time || 750;
-          if(elements.length > 0){
-            setTimeout(function(){
-              $this = $(elements.shift());
-              $this.fadeIn(function(){ fadeIn(elements, time-200) });
-            }, time);
-          }
-        }
-        fadeIn($('.fadein').toArray());
-        
-        $('#newsletter-entry').validate({
-          rules: {
-            'entry.2.single': {
-              email: true,
-              required: true
-            }
-          },
-          submitHandler: function(form){
-            $(form).ajaxSubmit({
-              success: function(){
-                $(form).fadeOut(function(){
-                  $('#after-submit .email').text($('#entry_2').val());
-                  $('#after-submit').fadeIn();
-                });
-              }
-            });
-          }
-        });
-      });
-    </script>
     <script type="text/javascript">
       var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
       document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
